@@ -1,0 +1,152 @@
+@CHARSET "UTF-8";
+
+
+/********** Navbar **********/
+/
+
+* {margin: 0px; padding: 0px;}
+#header{
+	width: 100%;
+	height: 80px;
+	background: #EF4F35;
+	box-shadow: 0px 4px 6px gray;
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex
+}
+
+#navbar{
+    margin: 0px;
+	width: 80%;
+	height: 80px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+        justify-content: space-around;
+
+}
+
+#navbar > li {
+	width: auto;
+	list-style: none;
+	float: left;
+	padding-right: 0px;
+	margin-right: 0px;
+
+}
+
+
+#logo{
+  width:39%;
+  height:80px;
+  display: inline-block;
+  background-color:red;
+  background-image: url("logo.jpg");
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width:400px;
+}
+
+#logo img{
+	width: 200px;
+	height: 80px;
+	float: left;
+}
+
+
+
+
+li a {
+    display: flex;
+    color: white;
+    line-height: 80px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+	#logo > img{
+		width: 200px;
+		height: 80px;
+		float: left;
+	}
+}
+
+@media (max-width:850px){
+  #navbar {
+    width: 100%;
+  }
+
+  #navbar li {
+    width: 40%;
+  }
+}
+
+@media (max-width:698px){
+  #navbar {
+    width: 60%;
+
+  }
+
+  #navbar > li {
+    width: 20%;
+  }
+#navbar li a{
+  font-size:13px;
+}
+
+}
+
+/* BODY */
+
+body{
+	min-height: 1500px;
+}
+
+/* Main */ 
+
+#main{
+    height: 500px;
+    width: 100%;
+}
+
+
+#foto1 {
+    width: 500px;
+    background-color: red;
+}
+
+#foto2{
+    background-color: green;
+}
+
+#foto3 {
+    background-color: aqua
+}
+
+#imagenes {
+    display: flex;
+}
+.prueba {    
+    display: flex;
+    flex-direction: row;
+    
+}
+    
+
+
+/* FOOTER */
+
+/*********** Letra ***************/
+@font-face {
+  font-family: Fuente;
+  src: url(fonts/Adamina-Regular.ttf);
+}
+
+div > ul{
+  color: white;
+  font-family:Fuente;
+  font-size: 20px;
+}
