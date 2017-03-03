@@ -138,6 +138,8 @@ body{
 #imagenes {
     display: flex;
 		justify-content: space-around;
+		/*height: 1000px;*/
+		background-color: white;
 }
 
 
@@ -154,15 +156,15 @@ div > ul{
 
 /* Div PDF*/
 
-#pdf {
-
-	background: blue;
-	width: 40%;
-	right: 30%;
+iframe {
+	width: 400px;
 	height: 600px;
-	z-index: 999;
-	position: absolute;
-		top: 10%;
+	/*position: absolute;
+	left:-1000px;*/
+}
+
+div#juan{
+		opacity: 0;
 }
 
 #background2 {
@@ -173,10 +175,7 @@ div > ul{
 	z-index: 5;
 	top: 10%;
 }
-iframe{
-		position:absolute;
-		left:-9000px;
-}
-:target{
-		left:0px;
+
+div#juan:target{
+	opacity: 1;
 }
