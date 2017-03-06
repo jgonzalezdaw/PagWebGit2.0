@@ -1,28 +1,30 @@
 @CHARSET "UTF-8";
 
 
-/********** Navbar **********/
+/**** Navbar ****/
 /
+
 
 * {margin: 0px; padding: 0px;}
 #header{
 	width: 100%;
+	min-width: 450px;
 	height: 80px;
 	background: #EF4F35;
 	box-shadow: 0px 4px 6px gray;
-    overflow: hidden;
-    border-radius: 5px;
-    display: flex
+  overflow: hidden;
+  border-radius: 5px;
+  display: flex
 }
 
 #navbar{
-    margin: 0px;
+  margin: 0px;
 	width: 80%;
 	height: 80px;
-    padding: 0px;
-    display: flex;
-    justify-content: space-between;
-        justify-content: space-around;
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
 
 }
 
@@ -32,7 +34,7 @@
 	float: left;
 	padding-right: 0px;
 	margin-right: 0px;
-
+transition: 0.4s;
 }
 
 
@@ -62,8 +64,8 @@ li a {
     color: white;
     line-height: 80px;
     text-align: center;
-    font-family: cursive;
-    font-size: 20px;
+		font-size: 150%;
+		font-family: 'Roboto Slab', serif;
     text-decoration: none;
 }
 
@@ -74,6 +76,7 @@ li a {
 	}
 }
 
+/************ Media Queries *************/
 @media (max-width:850px){
   #navbar {
     width: 100%;
@@ -105,41 +108,27 @@ body{
 	min-height: 1500px;
 }
 
-/* Main */ 
+/* Main */
 
 #main{
     height: 500px;
     width: 100%;
+		min-width: 450px;
 }
 
-
-#foto1 {
-    width: 500px;
-    background-color: red;
-}
-
-#foto2{
-    background-color: green;
-}
-
-#foto3 {
-    background-color: aqua
-}
 
 #imagenes {
     display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
 }
-.prueba {    
-    display: flex;
-    flex-direction: row;
-    
-}
-    
+
+
 
 
 /* FOOTER */
 
-/*********** Letra ***************/
+/***** Letra *****/
 @font-face {
   font-family: Fuente;
   src: url(fonts/Adamina-Regular.ttf);
@@ -149,4 +138,26 @@ div > ul{
   color: white;
   font-family:Fuente;
   font-size: 20px;
+}
+
+div.prueba p{
+	text-align: center;
+	font-size: 250%;
+	font-family: 'Roboto Slab', serif;
+	border-bottom: 2px solid #EF4F35;
+	background-color: ;
+
+}
+div.prueba{
+margin-right: 5%;
+}
+div.prueba img{
+
+}
+
+div.prueba img:hover{
+	border-radius: 9px 9px 9px 9px;
+-moz-border-radius: 9px 9px 9px 9px;
+-webkit-border-radius: 9px 9px 9px 9px;
+border: 3px solid #A7817B;
 }
