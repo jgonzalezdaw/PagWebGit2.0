@@ -1,12 +1,14 @@
 @CHARSET "UTF-8";
 
 
-/********** Navbar **********/
+/**** Navbar ****/
 /
+
 
 * {margin: 0px; padding: 0px;}
 #header{
 	width: 100%;
+	min-width: 450px;
 	height: 80px;
 	background: #EF4F35;
 	box-shadow: 0px 4px 6px gray;
@@ -32,7 +34,7 @@
 	float: left;
 	padding-right: 0px;
 	margin-right: 0px;
-
+transition: 0.4s;
 }
 
 
@@ -74,6 +76,7 @@ li a {
 	}
 }
 
+/************ Media Queries *************/
 @media (max-width:850px){
   #navbar {
     width: 100%;
@@ -110,46 +113,45 @@ body{
 #main{
     height: 500px;
     width: 100%;
+		min-width: 450px;
 }
 
 
-#foto1 p {
-	text-align: center;
-	font-family: 'Roboto Slab', serif;
-	font-size: 250%;
-
-}
-
-#foto2{
-	text-align: center;
-	font-size: 250%;
-	font-family: 'Roboto Slab', serif;
-
-}
-
-#foto3 {
-	text-align: center;
-	font-size: 250%;
-	font-family: 'Roboto Slab', serif;
-
-
-}
 
 #imagenes {
     display: flex;
 		justify-content: space-around;
+		flex-wrap: wrap;
 }
 
-
-
-
-/* FOOTER */
 
 div > ul{
   color: white;
   font-family:Fuente;
   font-size: 20px;
 }
+
+
+div.prueba p{
+	text-align: center;
+	font-size: 250%;
+	font-family: 'Roboto Slab', serif;
+	border-bottom: 2px solid #EF4F35;
+	background-color: ;
+
+}
+div.prueba{
+margin-right: 5%;
+}
+div.prueba img{
+
+}
+
+div.prueba img:hover{
+	border-radius: 9px 9px 9px 9px;
+-moz-border-radius: 9px 9px 9px 9px;
+-webkit-border-radius: 9px 9px 9px 9px;
+border: 3px solid #A7817B;
 
 
 /* Div PDF*/
