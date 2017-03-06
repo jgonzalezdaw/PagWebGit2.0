@@ -139,7 +139,6 @@ body{
     display: flex;
 		justify-content: space-around;
 		/*height: 1000px;*/
-		background-color: white;
 }
 
 
@@ -163,8 +162,16 @@ iframe {
 	left:-1000px;*/
 }
 
-div#juan{
+div#pdf{
 		opacity: 0;
+		z-index: 10;
+}
+
+#background2{
+	opacity: 0;
+}
+
+#background2:target{
 }
 
 #background2 {
@@ -176,6 +183,19 @@ div#juan{
 	top: 10%;
 }
 
-div#juan:target{
+div#pdf:target{
 	opacity: 1;
+}
+
+#pdf {
+	position: absolute;
+	top: 10%;
+	left: 30%;
+	width: 40%;
+	border: 2px solid blue;
+}
+
+iframe {
+	width: 100%;
+	height: 975px;
 }
