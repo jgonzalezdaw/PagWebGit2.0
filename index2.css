@@ -28,6 +28,40 @@
 
 }
 
+.effect6{color:rgba(0,0,0, 0) !important; transition: all .3s ease;}
+.effect6{text-shadow:0 0 0  #fff, 0 -80px 0 #000 ;}
+
+
+@-webkit-keyframes drop {
+  0%{text-shadow:0 0 0  #fff, 0 -80px 0 #000 ;}
+   20% {text-shadow:0 0 0  #fff, 0 -28px 0 #000 ;}
+   30%{text-shadow:0 28px 0  #fff, 0 0px 0 #000 ;}
+  40%{text-shadow:0 80px 0  #fff, 0 0px 0 #000 ;}
+   41%{text-shadow:0 80px 0  #fff, 0 0px 0 #000 , 0 -80px 0 #fff ;}
+  70%{text-shadow:0 80px 0  #fff, 0 28px 0 #000 , 0 0px 0 #fff ;}
+  80%{text-shadow:0 80px 0  #fff, 0 80px 0 #000 , 0 0px 0 #fff ;}
+100%{text-shadow:0 80px 0  #fff, 0 80px 0 #000 , 0 0px 0 #fff ;}
+}/*safari and chrome*/
+
+
+@keyframes drop {
+  0%{text-shadow:0 0 0  #fff, 0 -80px 0 #000 ;}
+   20% {text-shadow:0 0 0  #fff, 0 -28px 0 #000 ;}
+   30%{text-shadow:0 28px 0  #fff, 0 0px 0 #000 ;}
+  40%{text-shadow:0 80px 0  #fff, 0 0px 0 #000 ;}
+   41%{text-shadow:0 80px 0  #fff, 0 0px 0 #000 , 0 -80px 0 #fff ;}
+  70%{text-shadow:0 80px 0  #fff, 0 28px 0 #000 , 0 0px 0 #fff ;}
+  80%{text-shadow:0 80px 0  #fff, 0 80px 0 #000 , 0 0px 0 #fff ;}
+100%{text-shadow:0 80px 0  #fff, 0 80px 0 #000 , 0 0px 0 #fff ;}
+}
+
+
+
+.btn.effect6:hover{
+  -webkit-animation: drop .6s 1 linear;
+ animation: drop .6s 1 linear;}
+
+
 #navbar > li {
 	width: auto;
 	list-style: none;
@@ -105,7 +139,7 @@ li a {
 /* BODY */
 
 body{
-	min-height: 1500px;
+	min-height: 1000px;
 }
 
 /* Main */
