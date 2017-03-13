@@ -137,7 +137,6 @@ div.prueba p{
 	font-size: 200%;
 	font-family: 'Roboto Slab', serif;
 	border-bottom: 2px solid #EF4F35;
-	background-color: ;
 
 }
 
@@ -148,9 +147,11 @@ div.prueba p{
 	}
 
 div.prueba{
-margin-right: 5%;
+	margin-right: 100px;
+	margin-bottom: 100px;
 }
 div.prueba img{
+	box-sizing: border-box;
 
 }
 
@@ -163,50 +164,35 @@ div.prueba img:hover{
 
 
 /* Div PDF*/
-
-iframe {
-	width: 400px;
-	height: 600px;
-	/*position: absolute;
-	left:-1000px;*/
-}
-
 div#pdf{
-		opacity: 0;
+	box-sizing: border-box;
+		height:  0px;
+		background-color: rgba(0,0,0,0.5);
+		overflow: hidden;
 		z-index: 10;
+		position: fixed;
+		top: 0px;
+		/*padding:20px;*/
+		/*left: 30%;*/
+		width: 100%;
 }
-/*
-#background2{
-	opacity: 0;
-}
-
-#background2:target{
-}
-
-
-#background2 {
-	background-color: rgba(250,150,150,0.5);
-	width: 99%;
-	height: 1000px;
-	position: absolute;
-	z-index: 5;
-	top: 10%;
-}
-*/
 
 div#pdf:target{
-	opacity: 1;
+	height:100vh;
 }
 
-#pdf {
-	position: absolute;
-	top: 10%;
-	left: 30%;
-	width: 40%;
-	border: 2px solid blue;
-}
 
-iframe {
-	width: 100%;
+div#pdf a{
+	display: block;
 	height: 975px;
+}
+iframe {
+	width: 50%;
+	min-width: 750px;
+	left: 0;
+	right: 0;
+	margin:0 auto;
+	height: 975px;
+	top: 0px;
+	position: absolute;
 }
