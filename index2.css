@@ -151,6 +151,7 @@ body{
 }
 
 
+
 #imagenes {
     display: flex;
 		justify-content: space-around;
@@ -158,21 +159,12 @@ body{
 }
 
 
-
-
-/* FOOTER */
-
-/***** Letra *****/
-@font-face {
-  font-family: Fuente;
-  src: url(fonts/Adamina-Regular.ttf);
-}
-
 div > ul{
   color: white;
   font-family:Fuente;
   font-size: 20px;
 }
+
 
 div.prueba p{
 	text-align: center;
@@ -194,4 +186,33 @@ div.prueba img:hover{
 -moz-border-radius: 9px 9px 9px 9px;
 -webkit-border-radius: 9px 9px 9px 9px;
 border: 3px solid #A7817B;
+
+
+/* Div PDF*/
+
+#pdf {
+
+	background: blue;
+	width: 40%;
+	right: 30%;
+	height: 600px;
+	z-index: 999;
+	position: absolute;
+		top: 10%;
+}
+
+#background2 {
+	background-color: rgba(250,150,150,0.5);
+	width: 99%;
+	height: 1000px;
+	position: absolute;
+	z-index: 5;
+	top: 10%;
+}
+iframe{
+		position:absolute;
+		left:-9000px;
+}
+:target{
+		left:0px;
 }
