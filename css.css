@@ -186,8 +186,14 @@ div.prueba{
 	margin-bottom: 100px;
 		transition: all .2s;
 		box-sizing: border-box;
-
 }
+
+.prueba p img {
+	float: left;
+	width: 43px;
+	height: 43px;
+}
+
 div.prueba img{
 	box-sizing: border-box;
 	border: 3px solid white;
@@ -255,7 +261,7 @@ div.pdf a{
 	height: 975px;
 }
 iframe {
-	width: 50%;
+	width: 42%;
 	min-width: 750px;
 	left: 0;
 	right: 0;
