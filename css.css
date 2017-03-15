@@ -178,6 +178,7 @@ div.prueba p{
     display: flex;
 		justify-content: space-around;
 		/*height: 1000px;*/
+
 	}
 
 div.prueba{
@@ -229,7 +230,7 @@ div.pdf{
 		width: 100%;
 }
 
-div#seis:target{
+div#uno:target{
 	height:100vh;
 }
 div#dos:target{
@@ -237,6 +238,15 @@ div#dos:target{
 }
 
 div#tres:target{
+	height:100vh;
+}
+div#cuatro:target{
+	height:100vh;
+}
+div#cinco:target{
+	height:100vh;
+}
+div#seis:target{
 	height:100vh;
 }
 
